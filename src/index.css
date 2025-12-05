@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Gurukul Palette */
+    --color-saffron-50: #FFF8E1;
+    --color-saffron-100: #FFECB3;
+    --color-saffron-400: #FFCA28;
+    --color-saffron-500: #FFC107;
+    --color-saffron-600: #FFA000;
+
+    --color-leaf-50: #F1F8E9;
+    --color-leaf-100: #DCEDC8;
+    --color-leaf-400: #9CCC65;
+    --color-leaf-500: #8BC34A;
+    --color-leaf-600: #7CB342;
+
+    --color-earth-50: #EFEBE9;
+    --color-earth-100: #D7CCC8;
+    --color-earth-600: #6D4C41;
+    --color-earth-800: #3E2723;
+
+    --color-sky-50: #E1F5FE;
+    --color-sky-100: #B3E5FC;
+    --color-sky-500: #03A9F4;
+  }
+
+  body {
+    @apply bg-[#FFFDF5] text-stone-800 font-sans antialiased selection:bg-orange-200 selection:text-orange-900;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Fredoka', sans-serif;
+  }
+}
+
+@layer components {
+
+  /* Button Styles */
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-gradient-to-b from-orange-400 to-orange-500 text-white font-bold py-3 px-8 rounded-3xl transition-all duration-150 border-2 border-orange-600 flex items-center justify-center gap-2;
+    box-shadow: 0 4px 0 rgb(194, 65, 12);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 2px 0 rgb(194, 65, 12);
+    transform: translateY(2px);
+  }
+
+  .btn-primary:active {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-to-b from-lime-400 to-lime-500 text-white font-bold py-3 px-8 rounded-3xl transition-all duration-150 border-2 border-lime-600 flex items-center justify-center gap-2;
+    box-shadow: 0 4px 0 rgb(63, 98, 18);
+  }
+
+  .btn-secondary:hover {
+    box-shadow: 0 2px 0 rgb(63, 98, 18);
+    transform: translateY(2px);
+  }
+
+  .btn-secondary:active {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  .btn-outline {
+    @apply bg-white text-stone-600 font-bold py-3 px-8 rounded-3xl transition-all duration-150 border-2 border-stone-300 flex items-center justify-center gap-2;
+    box-shadow: 0 4px 0 rgb(168, 162, 158);
+  }
+
+  .btn-outline:hover {
+    box-shadow: 0 2px 0 rgb(168, 162, 158);
+    transform: translateY(2px);
+  }
+
+  .btn-outline:active {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-3xl shadow-xl border-2 border-stone-100 p-6;
+  }
+
+  .card-glow {
+    @apply bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border-2 border-orange-100 p-6;
+  }
+
+  /* Lesson Bubble */
+  .lesson-bubble {
+    @apply w-20 h-20 rounded-full flex items-center justify-center font-bold text-2xl transition-all duration-300 cursor-pointer border-4 border-white relative z-10;
+  }
+
+  .lesson-bubble-locked {
+    @apply bg-stone-200 text-stone-400 border-stone-300 cursor-not-allowed shadow-none;
+  }
+
+  .lesson-bubble-available {
+    @apply bg-gradient-to-b from-orange-400 to-orange-500 text-white border-orange-200 hover:scale-110 hover:-translate-y-1;
+  }
+
+  .lesson-bubble-completed {
+    @apply bg-gradient-to-b from-lime-400 to-lime-500 text-white border-lime-200;
+  }
+
+  /* Progress Bar */
+  .progress-bar {
+    @apply w-full h-4 bg-stone-200 rounded-full overflow-hidden border-2 border-stone-300;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-lime-400 to-lime-500 transition-all duration-500 ease-out rounded-full;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-2xl font-bold text-sm shadow-sm border-2;
+  }
+
+  .badge-xp {
+    @apply bg-orange-50 text-orange-700 border-orange-200;
+  }
+
+  .badge-streak {
+    @apply bg-red-50 text-red-700 border-red-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-red-600;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  /* 3D Transform Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}

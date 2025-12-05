@@ -1,0 +1,44 @@
+[
+    {
+        "id": "karma-hero",
+        "name": "Karma Hero",
+        "description": "Complete 5 Karma Yoga lessons",
+        "iconUrl": "🏆",
+        "requirement": "Complete 5 lessons"
+    },
+    {
+        "id": "jnana-explorer",
+        "name": "Jnana Explorer",
+        "description": "Complete 5 Jnana Yoga lessons",
+        "iconUrl": "📚",
+        "requirement": "Complete 5 lessons"
+    },
+    {
+        "id": "streak-master",
+        "name": "Sankalpa Streak Master",
+        "description": "Maintain a 7-day streak",
+        "iconUrl": "🔥",
+        "requirement": "7-day streak"
+    },
+    {
+        "id": "truth-seeker",
+        "name": "Truth Seeker",
+        "description": "Complete 10 lessons",
+        "iconUrl": "✨",
+        "requirement": "Complete 10 lessons"
+    },
+    {
+        "id": "disciplined-learner",
+        "name": "Disciplined Learner",
+        "description": "Complete daily practice for 5 days",
+        "iconUrl": "🎯",
+        "requirement": "5 days of practice"
+    },
+    {
+        "id": "gita-level-1",
+        "name": "Gita Level 1 Completed",
+        "description": "Complete all Chapter 1 lessons",
+        "iconUrl": "🏅",
+        "requirement": "Complete Chapter 1"
+    }
+]

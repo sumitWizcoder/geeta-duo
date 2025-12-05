@@ -1,0 +1,1509 @@
+[
+    {
+        "id": "ch1-1",
+        "chapter": "1",
+        "title": "The Big Battle",
+        "description": "Arjuna is sad",
+        "topic": "Arjuna's Doubt",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "A Prince in Doubt",
+            "content": [
+                "Imagine having to fight your own cousins in a huge war! That's exactly where Arjuna stood.",
+                "He saw his teachers, uncles, and friends on the other side. His heart sank, and he felt like crying.",
+                "He told Krishna, 'I can't do this! I'd rather live as a beggar than kill my family.' This sadness is where the Gita begins."
+            ],
+            "imageUrl": "/assets/arjuna_doubt.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "Warrior's Feelings",
+            "instruction": "Tap to see what Arjuna felt.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Hands Shaking",
+                    "back": "Nervousness 😨"
+                },
+                {
+                    "id": "e2",
+                    "front": "Dropping Bow",
+                    "back": "Giving Up 🏳️"
+                },
+                {
+                    "id": "e3",
+                    "front": "Tears",
+                    "back": "Sadness 😢"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Why was Arjuna sad?",
+                "options": [
+                    "He lost his money",
+                    "He had to fight his family",
+                    "He hurt his leg",
+                    "He forgot his arrows"
+                ],
+                "correct": "He had to fight his family",
+                "explanation": "Arjuna was overwhelmed by love and pity for his relatives whom he had to fight."
+            }
+        ],
+        "shloka": {
+            "text": "karpanya-dosho-pahata-svabhavah",
+            "translation": "Now I am confused about my duty and have lost all composure because of miserly weakness."
+        },
+        "moral": "It is okay to be confused. The first step to wisdom is admitting you need help."
+    },
+    {
+        "id": "ch1-2",
+        "chapter": "1",
+        "title": "Asking for Help",
+        "description": "Turning to Krishna",
+        "topic": "Surrender",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "I am Confused!",
+            "content": [
+                "Arjuna didn't know what was right or wrong. Should he fight? Should he run?",
+                "He turned to his best friend and charioteer, Krishna.",
+                "He said, 'I am your student. Please teach me.' This act of asking for help is the first step to wisdom."
+            ],
+            "imageUrl": "/assets/krishna_arjuna.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Best Friends",
+            "instruction": "Match the role to the person.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Arjuna",
+                    "back": "Student 📝"
+                },
+                {
+                    "id": "e2",
+                    "front": "Krishna",
+                    "back": "Teacher 🧘‍♂️"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "What did Arjuna ask Krishna?",
+                "options": [
+                    "To drive faster",
+                    "To teach him the truth",
+                    "To give him food",
+                    "To fight for him"
+                ],
+                "correct": "To teach him the truth",
+                "explanation": "Arjuna surrendered to Krishna and asked for guidance to solve his confusion."
+            }
+        ],
+        "shloka": {
+            "text": "shishyaste 'ham shadhi mam tvam prapannam",
+            "translation": "I am Your disciple, and a soul surrendered unto You. Please instruct me."
+        },
+        "moral": "When you are lost, find a true teacher (Guru) and listen with an open heart."
+    },
+    {
+        "id": "ch2-1",
+        "chapter": "2",
+        "title": "You Are Not the Body",
+        "description": "The eternal soul",
+        "topic": "Sankhya Yoga",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "The Changing Body",
+            "content": [
+                "Krishna smiled and said, 'Why do you cry for the body?'",
+                "Just as a person changes from a baby to a youth to an old person, the soul passes into a new body after death.",
+                "You replace old clothes with new ones. In the same way, the soul gets a new body. The soul never dies!"
+            ],
+            "imageUrl": "/assets/soul.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "Clothes vs Body",
+            "instruction": "See the connection.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Old Shirt",
+                    "back": "Old Body 👴"
+                },
+                {
+                    "id": "e2",
+                    "front": "New Shirt",
+                    "back": "New Body 👶"
+                },
+                {
+                    "id": "e3",
+                    "front": "Person wearing it",
+                    "back": "The Soul ✨"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "The soul is compared to...",
+                "options": [
+                    "A car",
+                    "A house",
+                    "The person wearing clothes",
+                    "A tree"
+                ],
+                "correct": "The person wearing clothes",
+                "explanation": "Just as we change clothes, the soul changes bodies."
+            }
+        ],
+        "shloka": {
+            "text": "vasamsi jirnani yatha vihaya",
+            "translation": "As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies."
+        },
+        "moral": "You are eternal. Do not fear death or change."
+    },
+    {
+        "id": "ch2-2",
+        "chapter": "2",
+        "title": "Indestructible You",
+        "description": "Characteristics of the Soul",
+        "topic": "Sankhya Yoga",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "Fire Cannot Burn It!",
+            "content": [
+                "Krishna describes the soul (Atman) as something amazing.",
+                "Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it.",
+                "It is eternal, unchanging, and invisible. YOU are that powerful soul!"
+            ],
+            "imageUrl": "/assets/shield_soul.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Soul vs Elements",
+            "instruction": "Can elements hurt the soul?",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "Fire 🔥",
+                    "isRevealed": false,
+                    "back": "Cannot burn it! ❌"
+                },
+                {
+                    "id": "e2",
+                    "text": "Water 💧",
+                    "isRevealed": false,
+                    "back": "Cannot wet it! ❌"
+                },
+                {
+                    "id": "e3",
+                    "text": "Sword ⚔️",
+                    "isRevealed": false,
+                    "back": "Cannot cut it! ❌"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Which of these can destroy the soul?",
+                "options": [
+                    "Fire",
+                    "Wind",
+                    "A sharp sword",
+                    "Nothing"
+                ],
+                "correct": "Nothing",
+                "explanation": "The soul is eternal and cannot be destroyed by anything in this world."
+            }
+        ],
+        "shloka": {
+            "text": "nainam chindanti shastrani",
+            "translation": "The soul can never be cut to pieces by any weapon, nor burned by fire, nor moistened by water, nor withered by the wind."
+        },
+        "moral": "Your true self is invincible and beyond all physical harm."
+    },
+    {
+        "id": "ch2-3",
+        "chapter": "2",
+        "title": "Peace of Mind",
+        "description": "Steady Wisdom",
+        "topic": "Sthita Prajna",
+        "difficulty": "advanced",
+        "xpReward": 20,
+        "concept": {
+            "title": "The Tortoise Technique",
+            "content": [
+                "How do you stay calm when things go wrong?",
+                "Krishna says: Be like a tortoise. When danger comes, the tortoise pulls its limbs inside its shell.",
+                "Similarly, a wise person pulls their senses away from bad things. They stay calm in happiness and sadness."
+            ],
+            "imageUrl": "/assets/tortoise.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Steady Wisdom",
+            "instruction": "Match the situation to the reaction.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Praise",
+                    "back": "Don't get proud 😐"
+                },
+                {
+                    "id": "e2",
+                    "front": "Insult",
+                    "back": "Don't get angry 😐"
+                },
+                {
+                    "id": "e3",
+                    "front": "Goal",
+                    "back": "Stay focused 🎯"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "A wise person is steady like...",
+                "options": [
+                    "A flickering candle",
+                    "A tortoise shell",
+                    "A running horse",
+                    "A falling leaf"
+                ],
+                "correct": "A tortoise shell",
+                "explanation": "They withdraw their senses from distractions just as a tortoise withdraws its limbs."
+            }
+        ],
+        "shloka": {
+            "text": "yada samharate chayam kurmo",
+            "translation": "One who is able to withdraw his senses from sense objects, as the tortoise draws its limbs within the shell, is firmly fixed in perfect consciousness."
+        },
+        "moral": "Master your senses, don't let them master you."
+    },
+    {
+        "id": "ch3-1",
+        "chapter": "3",
+        "title": "Duty Calls",
+        "description": "What is Karma Yoga?",
+        "topic": "Karma Yoga",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "You Must Act",
+            "content": [
+                "Can you sit still without doing anything? Even breathing is an action!",
+                "Krishna says running away to a forest is not the answer. You must do your duty in the world.",
+                "Karma Yoga is doing your work (student, parent, employee) perfectly, as an offering to God."
+            ],
+            "imageUrl": "/assets/karma_yoga.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "Action vs Inaction",
+            "instruction": "Which is better?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Sleeping all day",
+                    "back": "Lazy (Tamas) 😴"
+                },
+                {
+                    "id": "e2",
+                    "front": "Doing your chores",
+                    "back": "Karma Yoga! ✅"
+                },
+                {
+                    "id": "e3",
+                    "front": "Pretending to meditate",
+                    "back": "Fake 🎭"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Karma Yoga means...",
+                "options": [
+                    "Running to the forest",
+                    "Doing your duty well",
+                    "Sleeping",
+                    "Complaining"
+                ],
+                "correct": "Doing your duty well",
+                "explanation": "Performing your prescribed duties without attachment is Karma Yoga."
+            }
+        ],
+        "shloka": {
+            "text": "niyatam kuru karma tvam",
+            "translation": "Perform your prescribed duty, for doing so is better than not working."
+        },
+        "moral": "Action is better than inaction. Do your duty cheerfully."
+    },
+    {
+        "id": "ch3-2",
+        "chapter": "3",
+        "title": "Wheel of Sacrifice",
+        "description": "The Cycle of Life",
+        "topic": "Yajna",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "Give to Get",
+            "content": [
+                "Rain comes from the clouds. Clouds come from the sun/sacrifice. Crops come from rain. Food comes from crops.",
+                "It's a giant circle! We must give back to nature and society.",
+                "If we only take and never give, we are like thieves. Helping others keeps the wheel turning."
+            ],
+            "imageUrl": "/assets/cycle_life.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "The Great Cycle",
+            "instruction": "Connect the links.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Rain",
+                    "back": "Food 🌾"
+                },
+                {
+                    "id": "e2",
+                    "front": "Food",
+                    "back": "Life ❤️"
+                },
+                {
+                    "id": "e3",
+                    "front": "Selfless Work",
+                    "back": "Rain 🌧️"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "If we take from nature without giving back, we are...",
+                "options": [
+                    "Smart",
+                    "Thieves",
+                    "Heroes",
+                    "Kings"
+                ],
+                "correct": "Thieves",
+                "explanation": "Krishna says one who enjoys gifts without giving something in return is verily a thief."
+            }
+        ],
+        "shloka": {
+            "text": "isten bhogan hi vo deva",
+            "translation": "The demigods, being pleased by sacrifices, will also please you."
+        },
+        "moral": "Life is a cycle of giving and taking. Be a giver, not a thief."
+    },
+    {
+        "id": "ch4-1",
+        "chapter": "4",
+        "title": "The Avatar",
+        "description": "Why God descends",
+        "topic": "Avatar",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "Yada Yada Hi Dharmasya",
+            "content": [
+                "Krishna reveals a secret: He has been born many times!",
+                "Whenever goodness (Dharma) falls down and badness (Adharma) rises up, God appears.",
+                "He comes to protect the good, destroy the bad, and re-establish the right path."
+            ],
+            "imageUrl": "/assets/avatar_vishnu.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Mission of Avatar",
+            "instruction": "Why does He come?",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "Protect helping people",
+                    "isRevealed": false,
+                    "back": "Paritranaya Sadhunam ✅"
+                },
+                {
+                    "id": "e2",
+                    "text": "Destroy evil doers",
+                    "isRevealed": false,
+                    "back": "Vinashaya Dushkritam ⚔️"
+                },
+                {
+                    "id": "e3",
+                    "text": "Establish Dharma",
+                    "isRevealed": false,
+                    "back": "Dharma Samsthapana ⚖️"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Whenever Dharma declines, Krishna...",
+                "options": [
+                    "Goes to sleep",
+                    "Manifests Himself",
+                    "Writes a letter",
+                    "Sends an army"
+                ],
+                "correct": "Manifests Himself",
+                "explanation": "'Sambhavaami Yuge Yuge' - I appear millennium after millennium."
+            }
+        ],
+        "shloka": {
+            "text": "yada yada hi dharmasya",
+            "translation": "Whenever and wherever there is a decline in religious practice, O descendant of Bharata, and a predominant rise of irreligion—at that time I descend Myself."
+        },
+        "moral": "Goodness always wins in the end. God protects those who do good."
+    },
+    {
+        "id": "ch4-2",
+        "chapter": "4",
+        "title": "Knowledge Fire",
+        "description": "Wisdom burns Karma",
+        "topic": "Jnana Yoga",
+        "difficulty": "advanced",
+        "xpReward": 20,
+        "concept": {
+            "title": "Burning the Seeds",
+            "content": [
+                "If you roast a seed, can it grow into a tree? No!",
+                "Similarly, our actions (Karma) usually create future results (rebirth).",
+                "But the Fire of Wisdom (knowing 'I am not the doer') roasts these seeds. A wise person is free from the chain of Karma."
+            ],
+            "imageUrl": "/assets/fire_wisdom.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "The Power of Wisdom",
+            "instruction": "What does wisdom do?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Pile of Wood (Karma)",
+                    "back": "Fuel 🔥"
+                },
+                {
+                    "id": "e2",
+                    "front": "Knowledge Fire",
+                    "back": "Burns it to Ashes ✨"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "How is knowledge like fire?",
+                "options": [
+                    "It is hot",
+                    "It burns all reactions to actions",
+                    "It is red",
+                    "It cooks food"
+                ],
+                "correct": "It burns all reactions to actions",
+                "explanation": "The fire of knowledge burns all karmas to ashes."
+            }
+        ],
+        "shloka": {
+            "text": "jnanagnih sarva-karmani",
+            "translation": "As a blazing fire turns firewood to ashes, O Arjuna, so does the fire of knowledge burn to ashes all reactions to material activities."
+        },
+        "moral": "True knowledge has the power to free you from all past mistakes."
+    },
+    {
+        "id": "ch5-1",
+        "chapter": "5",
+        "title": "Lotus Leaf",
+        "description": "Living in the world",
+        "topic": "Karma Sanyasa",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "Untouched by Water",
+            "content": [
+                "Have you seen a lotus leaf in a pond? It is in the water, but the water doesn't stick to it.",
+                "Krishna says we should live in the world like that.",
+                "Do your duty, have friends, play games—but don't let the sticky mud of selfishness and attachment stick to you!"
+            ],
+            "imageUrl": "/assets/lotus.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Like a Lotus",
+            "instruction": "Be in the world, not of it.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Water",
+                    "back": "Worldly Problems 🌊"
+                },
+                {
+                    "id": "e2",
+                    "front": "Lotus Leaf",
+                    "back": "You (The Soul) 🌿"
+                },
+                {
+                    "id": "e3",
+                    "front": "Sliding off",
+                    "back": "No Attachment ✨"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "How should we live in the world?",
+                "options": [
+                    "Like a sponge soaking up water",
+                    "Like a lotus leaf untouched by water",
+                    "Like a rock sinking",
+                    "Like a fish"
+                ],
+                "correct": "Like a lotus leaf untouched by water",
+                "explanation": "One who performs duty without attachment is unaffected by sin, like a lotus leaf by water."
+            }
+        ],
+        "shloka": {
+            "text": "lipvate na sa papena",
+            "translation": "One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected by sinful action, as the lotus leaf is untouched by water."
+        },
+        "moral": "Be in the world, but not of the world. Do your best and leave the rest."
+    },
+    {
+        "id": "ch6-1",
+        "chapter": "6",
+        "title": "Monkey Mind",
+        "description": "Controlling thoughts",
+        "topic": "Dhyana Yoga",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "The Jumping Monkey",
+            "content": [
+                "Review: The mind is restless! Arjuna says, 'Controlling the mind is like trying to catch the wind!'",
+                "Krishna agrees it is hard. But He says it is possible.",
+                "How? Through 'Abhyasa' (Practice) and 'Vairagya' (Detachment). Keep bringing the mind back, again and again."
+            ],
+            "imageUrl": "/assets/monkey_mind.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Taming the Mind",
+            "instruction": "Two keys to success.",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "Mind runs away",
+                    "isRevealed": false,
+                    "back": "Pull it back! ↩️"
+                },
+                {
+                    "id": "e2",
+                    "text": "Abhyasa",
+                    "isRevealed": false,
+                    "back": "Practice 🏋️"
+                },
+                {
+                    "id": "e3",
+                    "text": "Vairagya",
+                    "isRevealed": false,
+                    "back": "Letting Go 🍃"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Arjuna compares the mind to...",
+                "options": [
+                    "A quiet lake",
+                    "The blowing wind",
+                    "A heavy stone",
+                    "A sleeping dog"
+                ],
+                "correct": "The blowing wind",
+                "explanation": "He says controlling the mind is as hard as controlling the wind."
+            }
+        ],
+        "shloka": {
+            "text": "abhyasena tu kaunteya",
+            "translation": "O mighty-armed son of Kunti, it is undoubtedly very difficult to curb the restless mind, but it is possible by suitable practice and by detachment."
+        },
+        "moral": "Don't give up on your mind. Train it like a puppy with patience and practice."
+    },
+    {
+        "id": "ch6-2",
+        "chapter": "6",
+        "title": "The Yogi's Eye",
+        "description": "Seeing equality",
+        "topic": "Samadarshana",
+        "difficulty": "advanced",
+        "xpReward": 20,
+        "concept": {
+            "title": "X-Ray Vision",
+            "content": [
+                "A true Yogi has special vision. They don't look at the outer clothes (body).",
+                "They see the same Soul in a learned priest, a cow, an elephant, a dog, and a dog-eater.",
+                "They see God everywhere! This is true equality."
+            ],
+            "imageUrl": "/assets/equality.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Same Soul",
+            "instruction": "They look different, but...",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Priest",
+                    "back": "Spirit Soul ✨"
+                },
+                {
+                    "id": "e2",
+                    "front": "Elephant",
+                    "back": "Spirit Soul ✨"
+                },
+                {
+                    "id": "e3",
+                    "front": "Dog",
+                    "back": "Spirit Soul ✨"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Who does a Yogi see in everyone?",
+                "options": [
+                    "Enemy",
+                    "Friend",
+                    "The Divine/Soul",
+                    "Stranger"
+                ],
+                "correct": "The Divine/Soul",
+                "explanation": "The humble sages, by virtue of true knowledge, see with equal vision."
+            }
+        ],
+        "shloka": {
+            "text": "vidya-vinaya-sampanne",
+            "translation": "The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brahmana, a cow, an elephant, a dog and a dog-eater."
+        },
+        "moral": "Treat everyone with respect, for the same Divine light shines in all."
+    },
+    {
+        "id": "ch7-1",
+        "chapter": "7",
+        "title": "God Everywhere",
+        "description": "Material and Spiritual energy",
+        "topic": "Vijnana Yoga",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "String of Pearls",
+            "content": [
+                "Krishna reveals: 'There is nothing superior to Me.'",
+                "Everything rests upon Him, like pearls strung on a thread.",
+                "He is the wetness in water, the light in the sun, the sound in space, and the smell in the earth."
+            ],
+            "imageUrl": "/assets/pearls.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "Find Krishna",
+            "instruction": "Where is He?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "In Water",
+                    "back": "Taste 💧"
+                },
+                {
+                    "id": "e2",
+                    "front": "In Sun",
+                    "back": "Light ☀️"
+                },
+                {
+                    "id": "e3",
+                    "front": "In Earth",
+                    "back": "Fragrance 🌸"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Krishna compares the universe resting on Him to...",
+                "options": [
+                    "A building on dirt",
+                    "Pearls on a thread",
+                    "Apples in a basket",
+                    "Stars in the sky"
+                ],
+                "correct": "Pearls on a thread",
+                "explanation": "Sutra mani-gana eva - like pearls strung on a thread."
+            }
+        ],
+        "shloka": {
+            "text": "mayi sarvam idam protam",
+            "translation": "There is no truth superior to Me. Everything rests upon Me, as pearls are strung on a thread."
+        },
+        "moral": "The whole universe is connected and held together by the Divine."
+    },
+    {
+        "id": "ch7-2",
+        "chapter": "7",
+        "title": "Four Kinds of People",
+        "description": "Who approaches God?",
+        "topic": "Bhakti",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "Who Prays?",
+            "content": [
+                "Krishna says four kinds of good people come to Him:",
+                "1. The Distressed (Help me!)",
+                "2. The Seeker of Wealth (Give me things!)",
+                "3. The Curious (Who are you?)",
+                "4. The Wise (I love you!)",
+                "The Wise one (Jnani) is dearest to Him because they love God for God's sake."
+            ],
+            "imageUrl": "/assets/four_devotees.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Types of Devotees",
+            "instruction": "Why do they pray?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Distressed",
+                    "back": "In Pain 🤕"
+                },
+                {
+                    "id": "e2",
+                    "front": "Greedy",
+                    "back": "Wants Money 💰"
+                },
+                {
+                    "id": "e3",
+                    "front": "Wise",
+                    "back": "Pure Love ❤️"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Which devotee does Krishna like the most?",
+                "options": [
+                    "The one who wants money",
+                    "The one who is in pain",
+                    "The wise one",
+                    "The curious one"
+                ],
+                "correct": "The wise one",
+                "explanation": "To the noble wise man, I am very dear and he is very dear to Me."
+            }
+        ],
+        "shloka": {
+            "text": "chatur-vidha bhajante mam",
+            "translation": "O best among the Bharatas, four kinds of pious men begin to render devotional service unto Me—the distressed, the desirer of wealth, the inquisitive, and he who is searching for knowledge of the Absolute."
+        },
+        "moral": "Love God for who He is, not just for what He can give you."
+    },
+    {
+        "id": "ch8-1",
+        "chapter": "8",
+        "title": "The Final Thought",
+        "description": "Thinking of God at death",
+        "topic": "Akshara Brahma",
+        "difficulty": "advanced",
+        "xpReward": 20,
+        "concept": {
+            "title": "What You Think, You Become",
+            "content": [
+                "The biggest test of life is the final moment.",
+                "Krishna says: 'Whatever you think of at the time of death, you become that in the next life.'",
+                "If you think of money, you might be reborn as a rich merchant. If you think of God, you go to God!",
+                "So, practice remembering Him always."
+            ],
+            "imageUrl": "/assets/final_thought.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Practice Makes Perfect",
+            "instruction": "Why practice?",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "Think of Football",
+                    "isRevealed": false,
+                    "back": "Be a player ⚽"
+                },
+                {
+                    "id": "e2",
+                    "text": "Think of Food",
+                    "isRevealed": false,
+                    "back": "Be a glutton 🍔"
+                },
+                {
+                    "id": "e3",
+                    "text": "Think of Krishna",
+                    "isRevealed": false,
+                    "back": "Go to Him! 🙏"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Your next life is determined by...",
+                "options": [
+                    "Your clothes",
+                    "Your thoughts at death",
+                    "Your friends",
+                    "Your house"
+                ],
+                "correct": "Your thoughts at death",
+                "explanation": "Yam yam vapi smaran bhavam - whatever state of being one remembers when quitting the body, that state one will attain."
+            }
+        ],
+        "shloka": {
+            "text": "yam yam vapi smaran bhavam",
+            "translation": "Whatever state of being one remembers when he quits his body, O son of Kunti, that state he will attain without fail."
+        },
+        "moral": "Your destination depends on your direction. Keep your mind on the highest goal."
+    },
+    {
+        "id": "ch9-1",
+        "chapter": "9",
+        "title": "The Royal Secret",
+        "description": "The King of Knowledge",
+        "topic": "Raja Vidya",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "The Happiest Knowledge",
+            "content": [
+                "This chapter is the King of Secrets (Raja Guhya).",
+                "It is: 1. King of Knowledge, 2. Purest, 3. Gives direct realization, 4. Very happy to perform!",
+                "Bhakti (Devotion) is not hard work. It is joyful."
+            ],
+            "imageUrl": "/assets/royal_secret.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "Secret Traits",
+            "instruction": "What is this knowledge?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Direct Experience",
+                    "back": "Real ✅"
+                },
+                {
+                    "id": "e2",
+                    "front": "Effect",
+                    "back": "Joyful 😃"
+                },
+                {
+                    "id": "e3",
+                    "front": "Purity",
+                    "back": "Ultimate ✨"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Krishna calls this knowledge...",
+                "options": [
+                    "The saddest secret",
+                    "The King of Education",
+                    "Boring",
+                    "Difficult"
+                ],
+                "correct": "The King of Education",
+                "explanation": "Raja-vidya raja-guhyam - the King of Knowledge and the King of Secrets."
+            }
+        ],
+        "shloka": {
+            "text": "raja-vidya raja-guhyam",
+            "translation": "This knowledge is the king of education, the most secret of all secrets. It is the purest knowledge, and because it gives direct perception of the self by realization, it is the perfection of religion. It is everlasting, and it is joyfully performed."
+        },
+        "moral": "True spiritual life is not boring; it is the happiest experience!"
+    },
+    {
+        "id": "ch9-2",
+        "chapter": "9",
+        "title": "Simple Offering",
+        "description": "Leaf, Flower, Fruit, Water",
+        "topic": "Bhakti",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "God is Easy to Please",
+            "content": [
+                "You don't need gold or expensive gifts to please God.",
+                "Krishna says: 'If you offer Me with love—a leaf, a flower, a fruit, or even water—I will accept it.'",
+                "The most important ingredient is LOVE (Bhakti)."
+            ],
+            "imageUrl": "/assets/offering.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Acceptable Gifts",
+            "instruction": "What does He accept?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Patram",
+                    "back": "Leaf 🍃"
+                },
+                {
+                    "id": "e2",
+                    "front": "Pushpam",
+                    "back": "Flower 🌺"
+                },
+                {
+                    "id": "e3",
+                    "front": "Phalam",
+                    "back": "Fruit 🍎"
+                },
+                {
+                    "id": "e4",
+                    "front": "Toyam",
+                    "back": "Water 💧"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "What determines if Krishna accepts an offering?",
+                "options": [
+                    "Its price",
+                    "The Love behind it",
+                    "Its size",
+                    "Its color"
+                ],
+                "correct": "The Love behind it",
+                "explanation": "He accepts even simple things if offered with devotion (Bhaktya prayachti)."
+            }
+        ],
+        "shloka": {
+            "text": "patram pushpam phalam toyam",
+            "translation": "If one offers Me with love and devotion a leaf, a flower, a fruit or water, I will accept it."
+        },
+        "moral": "God is hungry for your love, not your money."
+    },
+    {
+        "id": "ch10-1",
+        "chapter": "10",
+        "title": "The Best of Everything",
+        "description": "Opulence of the Absolute",
+        "topic": "Vibhuti",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "I am the Lion",
+            "content": [
+                "Arjuna asks, 'Where should I look for you?'",
+                "Krishna lists His glories: 'Among beasts, I am the Lion. Among fish, I am the Shark. Among rivers, I am the Ganga.'",
+                "Whenever you see something amazing, beautiful, or powerful, know that it is just a spark of His splendor."
+            ],
+            "imageUrl": "/assets/lion.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Krishna Is...",
+            "instruction": "Guess His forms.",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "Among Beasts",
+                    "isRevealed": false,
+                    "back": "Lion 🦁"
+                },
+                {
+                    "id": "e2",
+                    "text": "Among Birds",
+                    "isRevealed": false,
+                    "back": "Eagle (Garuda) 🦅"
+                },
+                {
+                    "id": "e3",
+                    "text": "Among Warriors",
+                    "isRevealed": false,
+                    "back": "Rama 🏹"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Everything beautiful in the world is...",
+                "options": [
+                    "An illusion",
+                    "A spark of God's splendor",
+                    "Man-made",
+                    "Accidental"
+                ],
+                "correct": "A spark of God's splendor",
+                "explanation": "Know that all opulent, beautiful and glorious creations spring from but a spark of My splendor."
+            }
+        ],
+        "shloka": {
+            "text": "yad yad vibhutimat sattvam",
+            "translation": "Know that all opulent, beautiful and glorious creations spring from but a spark of My splendor."
+        },
+        "moral": "See the hand of God in all beautiful and amazing things."
+    },
+    {
+        "id": "ch11-1",
+        "chapter": "11",
+        "title": "Cosmic Form",
+        "description": "Seeing the Universe",
+        "topic": "Vishvarupa",
+        "difficulty": "advanced",
+        "xpReward": 25,
+        "concept": {
+            "title": "A Thousand Suns",
+            "content": [
+                "Arjuna wanted to see Krishna's true form. Krishna gave him 'Divine Eyes'.",
+                "Boom! Arjuna saw the Universal Form. Unlimited faces, eyes, arms. Blazing like a thousand suns rising at once!",
+                "It was beautiful but also terrifying. It contained everything—past, present, future, heavens, and hells."
+            ],
+            "imageUrl": "/assets/cosmic_form.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "Divine Vision",
+            "instruction": "What did he see?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Brightness",
+                    "back": "1000 Suns ☀️"
+                },
+                {
+                    "id": "e2",
+                    "front": "Limits",
+                    "back": "Unlimited 🌌"
+                },
+                {
+                    "id": "e3",
+                    "front": "Feeling",
+                    "back": "Awe & Fear 😨"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "What did Krishna give Arjuna to see His form?",
+                "options": [
+                    "Sunglasses",
+                    "Divine Eyes",
+                    "A Telescope",
+                    "A Mirror"
+                ],
+                "correct": "Divine Eyes",
+                "explanation": "Divya-chakshu - divine eyes, because normal eyes cannot bear the sight."
+            }
+        ],
+        "shloka": {
+            "text": "divi surya-sahasrasya",
+            "translation": "If hundreds of thousands of suns were to rise at once into the sky, their radiance might resemble the effulgence of the Supreme Person in that universal form."
+        },
+        "moral": "God is bigger than we can imagine. We need His grace to truly see Him."
+    },
+    {
+        "id": "ch12-1",
+        "chapter": "12",
+        "title": "Devotion is Best",
+        "description": "Bhakti Yoga",
+        "topic": "Bhakti",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "Personal vs Impersonal",
+            "content": [
+                "Arjuna asks: 'Is it better to worship You as a Person or as shapeless Light?'",
+                "Krishna answers: 'Those who focus on Me (Person) reach Me easily. The other path is very difficult for humans.'",
+                "It is hard to love a 'Force'. It is easy to love a Friend."
+            ],
+            "imageUrl": "/assets/bhakti_love.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Which Path?",
+            "instruction": "Compare the paths.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Impersonal Light",
+                    "back": "Difficult Hard"
+                },
+                {
+                    "id": "e2",
+                    "front": "Loving Person",
+                    "back": "Easy & Swift ✅"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Why is Bhakti Yoga easier?",
+                "options": [
+                    "It requires no effort",
+                    "Because we have bodies and feelings",
+                    "It is shorter",
+                    "It is cheaper"
+                ],
+                "correct": "Because we have bodies and feelings",
+                "explanation": "For those whose minds are attached to the unmanifest, advancement is very troublesome."
+            }
+        ],
+        "shloka": {
+            "text": "klesho 'dhikataras tesham",
+            "translation": "For those whose minds are attached to the unmanifest, the impersonal feature of the Supreme, advancement is very troublesome. To make progress in that discipline is always difficult for those who are embodied."
+        },
+        "moral": "God wants a relationship with you. It is easier to love a Person than a concept."
+    },
+    {
+        "id": "ch13-1",
+        "chapter": "13",
+        "title": "Field & Knower",
+        "description": "Body and Soul distinction",
+        "topic": "Kshetra",
+        "difficulty": "advanced",
+        "xpReward": 20,
+        "concept": {
+            "title": "The Farmer and the Field",
+            "content": [
+                "Think of your body as a Field (Kshetra). Actions grow here like crops.",
+                "You (the Soul) are the Knower of the Field (Kshetrajna).",
+                "You are the observer. The body is the object. Don't confuse the two!"
+            ],
+            "imageUrl": "/assets/field.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Who Am I?",
+            "instruction": "Identify the parts.",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "The Body",
+                    "isRevealed": false,
+                    "back": "Field (Kshetra) 🌱"
+                },
+                {
+                    "id": "e2",
+                    "text": "The Soul",
+                    "isRevealed": false,
+                    "back": "Knower (Kshetrajna) 👁️"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "The body is called the Field because...",
+                "options": [
+                    "We play sports on it",
+                    "Our actions grow results here",
+                    "It is green",
+                    "It is flat"
+                ],
+                "correct": "Our actions grow results here",
+                "explanation": "This body is called the field, and one who knows this body is called the knower."
+            }
+        ],
+        "shloka": {
+            "text": "idam shariram kaunteya",
+            "translation": "O son of Kunti, this body is called the field, and one who knows this body is called the knower of the field."
+        },
+        "moral": "You are the observer of your body and mind, not the body and mind themselves."
+    },
+    {
+        "id": "ch14-1",
+        "chapter": "14",
+        "title": "Three Gunas",
+        "description": "Modes of Nature",
+        "topic": "Triguna",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "The Puppets of Nature",
+            "content": [
+                "Material nature has three ropes (Gunas) that bind us:",
+                "1. Sattva (Goodness) - Pure, happy, wise.",
+                "2. Rajas (Passion) - Active, greedy, restless.",
+                "3. Tamas (Ignorance) - Lazy, sleepy, confused.",
+                "To know God, we must rise above all three!"
+            ],
+            "imageUrl": "/assets/puppets.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "Match the Mode",
+            "instruction": "What does each mode feel like?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Sattva",
+                    "back": "Happiness ☀️"
+                },
+                {
+                    "id": "e2",
+                    "front": "Rajas",
+                    "back": "Stress 😫"
+                },
+                {
+                    "id": "e3",
+                    "front": "Tamas",
+                    "back": "Sleep 😴"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Which mode makes you feel lazy and sleepy?",
+                "options": [
+                    "Sattva",
+                    "Rajas",
+                    "Tamas",
+                    "Nirvana"
+                ],
+                "correct": "Tamas",
+                "explanation": "Tamas is the mode of ignorance, born of darkness, causing madness and sleep."
+            }
+        ],
+        "shloka": {
+            "text": "sattvam rajas tama iti",
+            "translation": "Material nature consists of three modes—goodness, passion and ignorance. When the eternal living entity comes in contact with nature, O mighty-armed Arjuna, he becomes conditioned by these modes."
+        },
+        "moral": "Recognize the modes acting on you. Choose Goodness, but aim for Transcendence."
+    },
+    {
+        "id": "ch15-1",
+        "chapter": "15",
+        "title": "Upside Down Tree",
+        "description": "The Banyan Tree",
+        "topic": "Purushottama",
+        "difficulty": "advanced",
+        "xpReward": 20,
+        "concept": {
+            "title": "Roots Up, Branches Down",
+            "content": [
+                "Krishna describes this world as a reflection of the spiritual world.",
+                "Like a Banyan tree reflected in a lake, the roots are up (towards God) and branches are down (here).",
+                "To escape this tangled tree, we must cut it with the weapon of detachment."
+            ],
+            "imageUrl": "/assets/banyan_tree.png"
+        },
+        "explore": {
+            "type": "flip-card",
+            "title": "The Reflection",
+            "instruction": "How to cut it?",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Roots",
+                    "back": "Upwards ⬆️"
+                },
+                {
+                    "id": "e2",
+                    "front": "Weapon",
+                    "back": "Detachment ⚔️"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "The worldly tree has its roots...",
+                "options": [
+                    "Deep in the earth",
+                    "Upwards",
+                    "Sideways",
+                    "Nowhere"
+                ],
+                "correct": "Upwards",
+                "explanation": "Urdhva-mulam - with roots above and branches below."
+            }
+        ],
+        "shloka": {
+            "text": "urdhva-mulam adhah-shakham",
+            "translation": "The Supreme Personality of Godhead said: It is said that there is an imperishable banyan tree that has its roots upward and its branches down and whose leaves are the Vedic hymns."
+        },
+        "moral": "This world is a reflection of Reality. Don't get tangled in the branches; look for the Root."
+    },
+    {
+        "id": "ch16-1",
+        "chapter": "16",
+        "title": "Good vs Bad",
+        "description": "Divine and Demonic",
+        "topic": "Daivasura",
+        "difficulty": "beginner",
+        "xpReward": 10,
+        "concept": {
+            "title": "The Two Natures",
+            "content": [
+                "Krishna says people have either Divine or Demonic qualities.",
+                "Divine: Fearlessness, charity, self-control, non-violence, truthfulness.",
+                "Demonic: Arrogance, pride, anger, harshness, ignorance.",
+                "Be Divine!"
+            ],
+            "imageUrl": "/assets/good_bad.png"
+        },
+        "explore": {
+            "type": "tap-reveal",
+            "title": "Check Your Heart",
+            "instruction": "Is it Divine?",
+            "items": [
+                {
+                    "id": "e1",
+                    "text": "Being Kind",
+                    "isRevealed": false,
+                    "back": "Divine 😇"
+                },
+                {
+                    "id": "e2",
+                    "text": "Being Arrogant",
+                    "isRevealed": false,
+                    "back": "Demonic 😈"
+                },
+                {
+                    "id": "e3",
+                    "text": "Speaking Truth",
+                    "isRevealed": false,
+                    "back": "Divine 😇"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Which of these is a Demonic quality?",
+                "options": [
+                    "Charity",
+                    "Peace",
+                    "Arrogance",
+                    "Cleanliness"
+                ],
+                "correct": "Arrogance",
+                "explanation": "Arrogance, pride, anger, and harshness belong to the demonic nature."
+            }
+        ],
+        "shloka": {
+            "text": "abhayam sattva-samsuddhir",
+            "translation": "Fearlessness; purification of one's existence; cultivation of spiritual knowledge; charity; self-control; performance of sacrifice; study of the Vedas; austerity; simplicity... these are transcendental qualities."
+        },
+        "moral": "Cultivate divine qualities like fearlessness and kindness to grow spiritually."
+    },
+    {
+        "id": "ch16-2",
+        "chapter": "16",
+        "title": "Three Gates to Hell",
+        "description": "Beware of these",
+        "topic": "Daivasura",
+        "difficulty": "intermediate",
+        "xpReward": 15,
+        "concept": {
+            "title": "Don't Fall In!",
+            "content": [
+                "Krishna warns us about three terrible traps that destroy the soul.",
+                "They are: 1. Lust (Selfish craving), 2. Anger, 3. Greed.",
+                "Every sane man should give these up, for they lead to darkness."
+            ],
+            "imageUrl": "/assets/three_gates.png"
+        },
+        "explore": {
+            "type": "match-pairs",
+            "title": "The Traps",
+            "instruction": "Avoid them.",
+            "items": [
+                {
+                    "id": "e1",
+                    "front": "Lust",
+                    "back": "Craving 🍭"
+                },
+                {
+                    "id": "e2",
+                    "front": "Anger",
+                    "back": "Rage 😡"
+                },
+                {
+                    "id": "e3",
+                    "front": "Greed",
+                    "back": "More! 🤑"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "type": "single-choice",
+                "question": "Which is NOT one of the three gates to hell?",
+                "options": [
+                    "Lust",
+                    "Anger",
+                    "Greed",
+                    "Love"
+                ],
+                "correct": "Love",
+                "explanation": "Lust, anger, and greed are the three gates leading to hell. Love leads to God."
+            }
+        ],
+        "shloka": {
+            "text": "tri-vidham narakasyedam",
+            "translation": "There are three gates leading to this hell—lust, anger and greed. Every sane man should give these up, for they lead to the degradation of the soul."
+        },
+        "moral": "Anger, Greed, and Lust are traps. Stay away from them to protect your soul."
+    }
+]
