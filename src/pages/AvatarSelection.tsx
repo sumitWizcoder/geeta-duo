@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { useGameStore } from '../store/useGameStore';
 import { Button } from '../components/ui/Button';
 import avatarsData from '../data/avatars.json';
-import { avatarEmojis } from '../utils/avatarUtils';
 
+import { avatarEmojis } from '../utils/avatarUtils';
 // Removed local avatarEmojis definition
 
 export function AvatarSelection() {
@@ -35,7 +35,7 @@ export function AvatarSelection() {
                 </p>
 
                 {/* Avatar Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
                     {avatarsData.map((avatar, index) => (
                         <motion.div
                             key={avatar.id}
@@ -47,26 +47,21 @@ export function AvatarSelection() {
                             onClick={() => setSelectedId(avatar.id)}
                             className={`cursor-pointer p-6 rounded-3xl transition-all ${selectedId === avatar.id
                                 ? 'bg-gradient-to-br from-peacock-400 to-peacock-600 shadow-glow'
-                                : 'bg-white shadow-lg hover:shadow-xl'
+                                : 'bg-white shadow-sm hover:shadow-xl'
                                 }`}
                         >
                             <div className="text-center">
-                                <div className="text-7xl mb-3">
+                                <div className="text-7xl">
                                     {avatarEmojis[avatar.id] || '👤'}
                                 </div>
-                                <p
-                                    className={`font-semibold ${selectedId === avatar.id ? 'text-white' : 'text-peacock-700'
-                                        }`}
-                                >
-                                    {avatar.name}
-                                </p>
+
                             </div>
                         </motion.div>
                     ))}
                 </div>
 
                 {/* Continue Button */}
-                <div className="text-center">
+                <div className="text-center flex justify-center items-center">
                     <Button
                         onClick={handleContinue}
                         disabled={!selectedId}

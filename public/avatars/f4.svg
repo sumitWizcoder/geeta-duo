@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="45" fill="#d1fae5"/>
+  <!-- Hair: Bun -->
+  <circle cx="50" cy="25" r="10" fill="#064e3b"/>
+  <!-- Face -->
+  <circle cx="50" cy="45" r="20" fill="#a7f3d0"/>
+  <!-- Eyes -->
+  <circle cx="43" cy="45" r="2" fill="black"/>
+  <circle cx="57" cy="45" r="2" fill="black"/>
+  <!-- Glasses -->
+  <rect x="40" y="42" width="20" height="6" rx="2" stroke="black" fill="none"/>
+  <!-- Smile -->
+  <path d="M45 55 Q 50 58 55 55" stroke="black" stroke-width="2" fill="none"/>
+  <!-- Shoulders -->
+  <path d="M30 65 Q 50 65 70 65 L 70 90 L 30 90 Z" fill="#10b981"/>
+</svg>

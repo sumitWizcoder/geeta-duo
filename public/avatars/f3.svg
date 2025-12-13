@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="45" fill="#fef3c7"/>
+  <!-- Face -->
+  <circle cx="50" cy="45" r="20" fill="#fde68a"/>
+  <!-- Hair: Bob cut -->
+  <path d="M30 35 Q 50 15 70 35 L 70 60 L 30 60 Z" fill="#92400e"/>
+  <!-- Eyes -->
+  <circle cx="43" cy="45" r="2" fill="black"/>
+  <circle cx="57" cy="45" r="2" fill="black"/>
+  <!-- Smile -->
+  <path d="M45 55 Q 50 58 55 55" stroke="black" stroke-width="2" fill="none"/>
+  <!-- Shoulders -->
+  <path d="M30 65 Q 50 65 70 65 L 70 90 L 30 90 Z" fill="#f59e0b"/>
+</svg>

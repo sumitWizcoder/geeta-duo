@@ -34,11 +34,5 @@
         "name": "Anjali",
         "category": "teen",
         "imageUrl": "/avatars/teen-2.svg"
-    },
-    {
-        "id": "avatar-guide-1",
-        "name": "Wise Guide",
-        "category": "guide",
-        "imageUrl": "/avatars/guide-1.svg"
     }
 ]

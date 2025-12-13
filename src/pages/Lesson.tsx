@@ -57,7 +57,7 @@ export function Lesson() {
             />
 
             {/* Back Button */}
-            <div className="p-4">
+            <div className="p-4 mb-10">
                 <button
                     onClick={() => navigate('/dashboard')}
                     className="flex items-center gap-2 text-stone-600 hover:text-orange-600 font-bold transition-colors"
@@ -69,7 +69,7 @@ export function Lesson() {
 
             {/* Lesson Header */}
             <div className="text-center mb-6">
-                <h1 className="text-4xl font-bold text-orange-600 mb-2 font-fredoka">{lesson.title}</h1>
+                <h1 className="text-4xl font-bold text-orange-600 mb-6 font-fredoka">{lesson.title}</h1>
                 <div className="flex justify-center gap-2">
                     <span className={`px-3 py-1 rounded-full text-sm font-bold ${phase === 'intro' ? 'bg-orange-100 text-orange-700' : 'bg-stone-100 text-stone-400'}`}>
                         Concept
