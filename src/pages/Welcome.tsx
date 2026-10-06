@@ -1,22 +1,27 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import { useGameStore } from '../store/useGameStore';
+import { Avatar } from '../components/ui/Avatar';
 
 export function Welcome() {
     const navigate = useNavigate();
-    const { setProfile } = useGameStore();
+    const { profile, setProfile } = useGameStore();
     const [step, setStep] = useState<'intro' | 'form'>('intro');
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
-    const handleStart = () => {
-        if (!firstName || !lastName) return;
+    if (profile.name && profile.avatarId) return <Navigate to="/dashboard" replace />;
 
-        const username = `${firstName.toLowerCase()}.${lastName.toLowerCase()}.${Math.floor(Math.random() * 1000)}`;
-        const displayName = `${firstName} ${lastName}`;
+    const handleStart = () => {
+        if (!firstName.trim() || !lastName.trim()) return;
+        const first = firstName.trim();
+        const last = lastName.trim();
+
+        const username = `${first.toLowerCase()}.${last.toLowerCase()}.${Math.floor(Math.random() * 1000)}`;
+        const displayName = `${first} ${last}`;
 
         setProfile({
             name: displayName,
@@ -41,15 +46,13 @@ export function Welcome() {
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
                 >
-                    <div className="w-48 h-48 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-2xl border-4 border-white">
-                        <span className="text-8xl">🧘‍♂️</span>
-                    </div>
+                    <Avatar id="avatar-guide-1" label="Your guide" className="w-44 h-44 sm:w-48 sm:h-48 shadow-2xl border-4 border-white" />
                 </motion.div>
 
                 {step === 'intro' ? (
                     <>
                         <motion.h1
-                            className="text-5xl md:text-6xl font-bold text-stone-800 mb-4 font-fredoka"
+                            className="text-display-xl font-bold text-stone-800 mb-2"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4 }}
@@ -58,7 +61,7 @@ export function Welcome() {
                         </motion.h1>
 
                         <motion.h2
-                            className="text-3xl md:text-4xl font-semibold text-orange-600 mb-6 font-fredoka"
+                            className="text-display-lg font-semibold text-orange-600 mb-6"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.6 }}
@@ -67,7 +70,7 @@ export function Welcome() {
                         </motion.h2>
 
                         <motion.p
-                            className="text-xl text-stone-600 mb-8 max-w-lg mx-auto font-outfit"
+                            className="text-body-lg text-stone-600 mb-8 max-w-md mx-auto"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.8 }}
@@ -95,7 +98,7 @@ export function Welcome() {
                         animate={{ opacity: 1, x: 0 }}
                         className="bg-white p-8 rounded-3xl shadow-xl border-2 border-stone-100 max-w-md mx-auto"
                     >
-                        <h2 className="text-2xl font-bold text-stone-800 mb-6 font-fredoka">What should we call you?</h2>
+                        <h2 className="text-title font-bold text-stone-800 mb-6">What should we call you?</h2>
 
                         <div className="space-y-4 text-left">
                             <div>

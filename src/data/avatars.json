@@ -2,37 +2,31 @@
     {
         "id": "avatar-boy-1",
         "name": "Arjun",
-        "category": "boy",
-        "imageUrl": "/avatars/boy-1.svg"
+        "category": "boy"
     },
     {
         "id": "avatar-boy-2",
         "name": "Ravi",
-        "category": "boy",
-        "imageUrl": "/avatars/boy-2.svg"
+        "category": "boy"
     },
     {
         "id": "avatar-girl-1",
         "name": "Priya",
-        "category": "girl",
-        "imageUrl": "/avatars/girl-1.svg"
+        "category": "girl"
     },
     {
         "id": "avatar-girl-2",
         "name": "Meera",
-        "category": "girl",
-        "imageUrl": "/avatars/girl-2.svg"
+        "category": "girl"
     },
     {
         "id": "avatar-teen-1",
         "name": "Vikram",
-        "category": "teen",
-        "imageUrl": "/avatars/teen-1.svg"
+        "category": "teen"
     },
     {
         "id": "avatar-teen-2",
         "name": "Anjali",
-        "category": "teen",
-        "imageUrl": "/avatars/teen-2.svg"
+        "category": "teen"
     }
 ]

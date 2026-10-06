@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { PathNode } from './PathNode';
 import { useGameStore } from '../../store/useGameStore';
 import type { Lesson } from '../../types';
-import { getAvatarEmoji } from '../../utils/avatarUtils';
+import { Avatar } from '../ui/Avatar';
 
 interface JourneyPathProps {
     lessons: Lesson[];
@@ -55,18 +55,11 @@ export function JourneyPath({ lessons, completedLessons, currentLessonId, onLess
             <div className="relative z-10 flex flex-col items-center">
                 {lessons.map((lesson, index) => {
                     const isCompleted = completedLessons.includes(lesson.id);
-                    // Check if previous lesson is completed (or if it's the first one)
-                    const prevLesson = index > 0 ? lessons[index - 1] : null;
-                    const isAvailable = index === 0 || (prevLesson && completedLessons.includes(prevLesson.id));
-
-                    // Determine status
                     let status: 'locked' | 'current' | 'completed' = 'locked';
                     if (isCompleted) {
                         status = 'completed';
                     } else if (lesson.id === currentLessonId) {
                         status = 'current';
-                    } else if (isAvailable) {
-                        status = 'locked';
                     }
 
                     // Calculate X offset for zigzag
@@ -91,12 +84,7 @@ export function JourneyPath({ lessons, completedLessons, currentLessonId, onLess
                                     transition={{ type: 'spring', stiffness: 100 }}
                                 >
                                     <div className="w-16 h-16 relative">
-                                        {/* Emoji Avatar */}
-                                        <div className="w-16 h-16 bg-white rounded-full border-4 border-orange-500 shadow-lg flex items-center justify-center overflow-hidden">
-                                            <span className="text-4xl" role="img" aria-label="avatar">
-                                                {getAvatarEmoji(profile.avatarId)}
-                                            </span>
-                                        </div>
+                                        <Avatar id={profile.avatarId} label={profile.name} className="w-16 h-16 border-4 border-orange-500 shadow-lg bg-white" />
                                         {/* Speech Bubble */}
                                         <motion.div
                                             className="absolute -top-8 -right-12 bg-white px-3 py-1 rounded-xl shadow-md border border-stone-200 text-xs font-bold text-stone-600 whitespace-nowrap"

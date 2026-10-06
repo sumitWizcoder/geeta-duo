@@ -5,8 +5,7 @@ import { useGameStore } from '../store/useGameStore';
 import { Button } from '../components/ui/Button';
 import avatarsData from '../data/avatars.json';
 
-import { avatarEmojis } from '../utils/avatarUtils';
-// Removed local avatarEmojis definition
+import { Avatar } from '../components/ui/Avatar';
 
 export function AvatarSelection() {
     const navigate = useNavigate();
@@ -27,15 +26,15 @@ export function AvatarSelection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <h1 className="text-4xl md:text-5xl font-display font-bold text-gradient text-center mb-4">
+                <h1 className="text-display-lg font-bold text-gradient text-center mb-3">
                     Choose Your Avatar, {profile.name.split(' ')[0]}!
                 </h1>
-                <p className="text-xl text-gray-600 text-center mb-8">
+                <p className="text-body-lg text-stone-600 text-center mb-8">
                     Pick a character that represents you!
                 </p>
 
                 {/* Avatar Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-10">
                     {avatarsData.map((avatar, index) => (
                         <motion.div
                             key={avatar.id}
@@ -45,16 +44,16 @@ export function AvatarSelection() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => setSelectedId(avatar.id)}
-                            className={`cursor-pointer p-6 rounded-3xl transition-all ${selectedId === avatar.id
+                            className={`cursor-pointer p-4 md:p-6 rounded-3xl transition-all ${selectedId === avatar.id
                                 ? 'bg-gradient-to-br from-peacock-400 to-peacock-600 shadow-glow'
                                 : 'bg-white shadow-sm hover:shadow-xl'
                                 }`}
                         >
-                            <div className="text-center">
-                                <div className="text-7xl">
-                                    {avatarEmojis[avatar.id] || '👤'}
-                                </div>
-
+                            <div className="flex flex-col items-center gap-3">
+                                <Avatar id={avatar.id} label={avatar.name} className="w-24 h-24 md:w-28 md:h-28 ring-4 ring-white shadow-md" />
+                                <span className={`font-display font-semibold text-lg ${selectedId === avatar.id ? 'text-white' : 'text-stone-700'}`}>
+                                    {avatar.name}
+                                </span>
                             </div>
                         </motion.div>
                     ))}

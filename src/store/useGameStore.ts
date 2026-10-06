@@ -31,12 +31,21 @@ interface GameState {
     setProfile: (profile: Partial<UserProfile>) => void;
     addXP: (amount: number) => void;
     completeLesson: (lessonId: string) => void;
-    resetCourse: (courseId: string, xpDeduction: number) => void;
+    resetCourse: (xpDeduction: number) => void;
     unlockBadge: (badgeId: string) => void;
-    updateStreak: () => void;
     resetProgress: () => void;
     setSettings: (settings: Partial<GameSettings>) => void;
 }
+
+const localDateKey = (d: Date = new Date()) =>
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+export const computeStreak = (streak: number, lastPlayedDate: string, today: string): number => {
+    if (lastPlayedDate === today) return streak;
+    if (!lastPlayedDate) return 1;
+    const diffDays = Math.round((Date.parse(today) - Date.parse(lastPlayedDate)) / 86400000);
+    return diffDays === 1 ? streak + 1 : 1;
+};
 
 const initialState = {
     profile: {
@@ -48,7 +57,7 @@ const initialState = {
         xp: 0,
         level: 1,
         streak: 0,
-        lastPlayedDate: new Date().toISOString().split('T')[0],
+        lastPlayedDate: '',
         completedLessons: [],
         unlockedBadges: [],
         currentLessonId: null,
@@ -84,53 +93,30 @@ export const useGameStore = create<GameState>()(
 
             completeLesson: (lessonId) =>
                 set((state) => {
-                    if (state.progress.completedLessons.includes(lessonId)) {
-                        return state;
-                    }
+                    const today = localDateKey();
+                    const { completedLessons, streak, lastPlayedDate } = state.progress;
                     return {
                         progress: {
                             ...state.progress,
-                            completedLessons: [...state.progress.completedLessons, lessonId],
+                            completedLessons: completedLessons.includes(lessonId)
+                                ? completedLessons
+                                : [...completedLessons, lessonId],
+                            streak: computeStreak(streak, lastPlayedDate, today),
+                            lastPlayedDate: today,
                         },
                     };
                 }),
 
-            resetCourse: (courseId, xpDeduction) =>
+            resetCourse: (xpDeduction) =>
                 set((state) => {
-                    // Filter out lessons belonging to this course (assuming courseId is part of lessonId or we filter by list)
-                    // Since we don't have a direct map here, we rely on the caller to pass the deduction.
-                    // But we need to remove the lessons from completedLessons.
-                    // For now, we'll assume the caller handles the logic or we just remove ALL lessons if we can't distinguish.
-                    // Wait, the user said "reset the particular course".
-                    // Our lesson IDs are like "karma-basics-01". We can filter by prefix or just remove specific IDs if passed.
-                    // To keep it simple and robust, let's assume we remove lessons that start with the courseId prefix if possible,
-                    // OR better, we just trust the caller to handle the visual reset? No, store must update state.
-                    // Let's filter completedLessons.
-
-                    // Actually, looking at lessons.json, "chapter": "1" etc.
-                    // We might need to pass the list of lesson IDs to remove.
-                    // Let's simplify: The caller (Dashboard) knows which lessons are in the course.
-                    // So we should probably pass `lessonIdsToRemove` instead of `courseId`.
-
-                    // But to match the interface, let's just do:
-                    const newCompletedLessons = state.progress.completedLessons.filter(
-                        id => !id.startsWith(courseId) // Assuming ID convention like 'karma-...' matches course
-                    );
-
-                    // If the convention isn't strict, we might miss some.
-                    // Let's look at lesson IDs: "karma-basics-01", "dharma-duty-01".
-                    // If courseId is "karma", it works.
-
                     const newXP = Math.max(0, state.progress.xp - xpDeduction);
-                    const newLevel = Math.floor(newXP / 100) + 1;
-
                     return {
                         progress: {
                             ...state.progress,
-                            completedLessons: newCompletedLessons,
+                            completedLessons: [],
                             xp: newXP,
-                            level: newLevel,
-                        }
+                            level: Math.floor(newXP / 100) + 1,
+                        },
                     };
                 }),
 
@@ -143,30 +129,6 @@ export const useGameStore = create<GameState>()(
                         progress: {
                             ...state.progress,
                             unlockedBadges: [...state.progress.unlockedBadges, badgeId],
-                        },
-                    };
-                }),
-
-            updateStreak: () =>
-                set((state) => {
-                    const today = new Date().toISOString().split('T')[0];
-                    const lastPlayed = new Date(state.progress.lastPlayedDate);
-                    const todayDate = new Date(today);
-                    const diffTime = Math.abs(todayDate.getTime() - lastPlayed.getTime());
-                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-                    let newStreak = state.progress.streak;
-                    if (diffDays === 1) {
-                        newStreak += 1;
-                    } else if (diffDays > 1) {
-                        newStreak = 1;
-                    }
-
-                    return {
-                        progress: {
-                            ...state.progress,
-                            streak: newStreak,
-                            lastPlayedDate: today,
                         },
                     };
                 }),
@@ -184,6 +146,8 @@ export const useGameStore = create<GameState>()(
         }),
         {
             name: 'gita-learning-storage',
+            version: 1,
+            migrate: (persisted) => persisted as GameState,
         }
     )
 );

@@ -129,7 +129,7 @@
                 "Just as a person changes from a baby to a youth to an old person, the soul passes into a new body after death.",
                 "You replace old clothes with new ones. In the same way, the soul gets a new body. The soul never dies!"
             ],
-            "imageUrl": "/assets/soul.png"
+            "imageUrl": "/assets/shield_soul.png"
         },
         "explore": {
             "type": "flip-card",

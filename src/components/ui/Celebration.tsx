@@ -18,14 +18,19 @@ interface CelebrationProps {
 
 export function Celebration({ show, message, earnedXP, shloka, moral, onComplete }: CelebrationProps) {
     const { width, height } = useWindowSize();
-    const [isVisible, setIsVisible] = useState(show);
+    const [dismissed, setDismissed] = useState(false);
+    const [prevShow, setPrevShow] = useState(show);
+    if (show !== prevShow) {
+        setPrevShow(show);
+        setDismissed(false);
+    }
+    const isVisible = show && !dismissed;
 
     useEffect(() => {
-        setIsVisible(show);
         // Only auto-dismiss if there is no educational content (shloka/moral)
         if (show && !shloka && !moral) {
             const timer = setTimeout(() => {
-                setIsVisible(false);
+                setDismissed(true);
                 if (onComplete) onComplete();
             }, 5000);
             return () => clearTimeout(timer);
@@ -33,7 +38,7 @@ export function Celebration({ show, message, earnedXP, shloka, moral, onComplete
     }, [show, onComplete, shloka, moral]);
 
     const handleContinue = () => {
-        setIsVisible(false);
+        setDismissed(true);
         if (onComplete) onComplete();
     };
 

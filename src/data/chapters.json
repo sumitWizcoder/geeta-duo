@@ -1,0 +1,18 @@
+[
+  { "id": "1", "title": "Arjuna's Doubt", "description": "The sadness of the warrior", "color": "bg-stone-500", "icon": "Shield" },
+  { "id": "2", "title": "Eternal Soul", "description": "Sankhya Yoga", "color": "bg-blue-600", "icon": "Sun" },
+  { "id": "3", "title": "Karma Yoga", "description": "The Art of Action", "color": "bg-orange-500", "icon": "RefreshCw" },
+  { "id": "4", "title": "Divine Knowledge", "description": "Wisdom & Avatar", "color": "bg-purple-600", "icon": "Lightbulb" },
+  { "id": "5", "title": "Renunciation", "description": "Karma Sanyasa", "color": "bg-teal-500", "icon": "Shield" },
+  { "id": "6", "title": "Meditation", "description": "Dhyana Yoga", "color": "bg-indigo-500", "icon": "Trophy" },
+  { "id": "7", "title": "Wisdom", "description": "God everywhere", "color": "bg-yellow-500", "icon": "Sun" },
+  { "id": "8", "title": "Imperishable", "description": "Path of Light", "color": "bg-red-500", "icon": "Heart" },
+  { "id": "9", "title": "Royal Secret", "description": "King of Knowledge", "color": "bg-pink-600", "icon": "Gem" },
+  { "id": "10", "title": "Divine Glories", "description": "Vibhuti Yoga", "color": "bg-emerald-500", "icon": "Leaf" },
+  { "id": "11", "title": "Cosmic Form", "description": "Thousand Suns", "color": "bg-amber-600", "icon": "Eye" },
+  { "id": "12", "title": "Bhakti Yoga", "description": "Path of Love", "color": "bg-rose-500", "icon": "Heart" },
+  { "id": "13", "title": "Field & Knower", "description": "Nature vs Soul", "color": "bg-lime-600", "icon": "Map" },
+  { "id": "14", "title": "Three Gunas", "description": "Ropes of Nature", "color": "bg-cyan-600", "icon": "Activity" },
+  { "id": "15", "title": "Supreme Person", "description": "The Tree of Life", "color": "bg-fuchsia-600", "icon": "Leaf" },
+  { "id": "16", "title": "Divine & Demonic", "description": "Good vs Bad Habits", "color": "bg-slate-700", "icon": "Swords" }
+]

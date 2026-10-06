@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,json}",
   ],
   theme: {
     extend: {
@@ -48,8 +48,28 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Outfit', 'Inter', 'sans-serif'],
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        display: ['Fredoka', 'Outfit', 'sans-serif'],
+        fredoka: ['Fredoka', 'Outfit', 'sans-serif'],
+        outfit: ['Outfit', 'system-ui', 'sans-serif'],
+        deva: ['"Noto Serif Devanagari"', 'serif'],
+      },
+      fontSize: {
+        'display-xl': ['clamp(2.5rem, 9vw, 4rem)', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
+        'display-lg': ['clamp(1.75rem, 6vw, 2.5rem)', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'title': ['clamp(1.25rem, 4vw, 1.5rem)', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'body-lg': ['clamp(1.0625rem, 3.4vw, 1.25rem)', { lineHeight: '1.55' }],
+        'caption': ['0.75rem', { lineHeight: '1.3', letterSpacing: '0.04em' }],
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '20%, 60%': { transform: 'translateX(-6px)' },
+          '40%, 80%': { transform: 'translateX(6px)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.4s ease-in-out',
       },
       borderRadius: {
         'xl': '1rem',
