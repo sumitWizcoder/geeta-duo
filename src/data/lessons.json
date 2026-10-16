@@ -74,7 +74,7 @@
                 "He turned to his best friend and charioteer, Krishna.",
                 "He said, 'I am your student. Please teach me.' This act of asking for help is the first step to wisdom."
             ],
-            "imageUrl": "/assets/krishna_arjuna.png"
+            "imageUrl": "/assets/arjuna_doubt.png"
         },
         "explore": {
             "type": "match-pairs",
@@ -189,7 +189,7 @@
                 "Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it.",
                 "It is eternal, unchanging, and invisible. YOU are that powerful soul!"
             ],
-            "imageUrl": "/assets/shield_soul.png"
+            "imageUrl": "/assets/indestructible_soul.png"
         },
         "explore": {
             "type": "tap-reveal",
